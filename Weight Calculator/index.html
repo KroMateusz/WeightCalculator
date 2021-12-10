@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desired weight calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__heading">
+            Desired weight calculator
+        </h1>
+    </header>
+    <main class="content">
+        <section class="form">
+            <article class="form__item">
+                <label for="weight-initial" class="form__label">Initial weight:</label>
+                <div class="form__data">
+                    <input type="range" name="weight-initial" id="weight-initial" class="form__input" step="1">
+                    <p class="form__result" data-initial-weight-result>85 kg</p>
+                </div>
+            </article>
+            <article class="form__item">
+                <label for="weight-desired" class="form__label">Desired weight:</label>
+                <div class="form__data">
+                    <input type="range" name="weight-desired" id="weight-desired" class="form__input" step="1">
+                    <p class="form__result" data-desired-weight-result>85 kg</p>
+                </div>
+            </article>
+            <article class="form__item">
+                <label for="height" class="form__label">Height:</label>
+                <div class="form__data">
+                    <input type="range" name="height" id="height" class="form__input" step="1">
+                    <p class="form__result" data-height-result>170 cm</p>
+                </div>
+            </article>
+            <article class="form__item">
+                <label for="start-date" class="form__label">Start date:</label>
+                <div class="form__data">
+                    <input type="date" name="start-date" id="start-date" class="form__input" step="1"> </div>
+            </article>
+            <article class="form__item">
+                <label for="end-date" class="form__label">End date:</label>
+                <div class="form__data">
+                    <input type="date" name="end-date" id="end-date" class="form__input" step="1">
+                </div>
+            </article>
+            <button class="form__button" data-button>Count</button>
+        </section>
+        <section class="result">
+            <p class="result__paragraph">You want loose<strong> 20kg</strong></p>
+            <p class="result__paragraph">Your current BMI is<strong> 28</strong> (Overweight)</p>
+            <p class="result__paragraph">Your desired BMI is<strong> 25</strong> (Normal)</p>
+            <p class="result__paragraph">You should loose<strong> 1kg</strong> per day</p>
+            <p class="result__paragraph">You should loose<strong> 7kg</strong> per week</p>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <script>
+        const app = new App();
+        app.initializeApp();
+    </script>
+</body>
+
+</html>
