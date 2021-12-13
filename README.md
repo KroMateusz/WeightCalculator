@@ -1,1 +1,3 @@
 # WeightCalculator
+
+Project finished
